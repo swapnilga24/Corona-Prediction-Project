@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+.container {
+  height: 580px;
+  position: relative;
+  border: 3px solid green;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h1 {text-align: center;
+color:red;
+}
+</style>
+</head>
+<body>
+
+<div id="image" style="background:url(/static/corona.jpg)center / cover no-repeat;">
+
+<div class="container">
+
+<h1>Predections of Coronavirus Confirmed,Deaths and Recovered cases for next 10 Days Using SVM Algorithm</h1>
+
+<div class="vertical-center">
+<a href="http://localhost:5000/confirmed" class="button">Confirmed Cases</a>
+<a href="http://localhost:5000/death" class="button">Death Cases</a>
+<a href="http://localhost:5000/recovered" class="button">Recovered Cases</a>
+
+<h1><marquee>*Data: 22/1/2020 to 27/4/2020</marquee></h1>
+
+</div>
+</div>
+</div>
+</body>
+</html>
+

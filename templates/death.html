@@ -1,0 +1,117 @@
+<!doctype html>
+<head>
+<style>
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+body {
+  background-color: coral;
+}
+h1 {text-align: center;
+color:yellow;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h1>Predections of Coronavirus Confirmed cases for next 10 Days Using SVM Algorithm</h1>
+<a href="http://localhost:5000" class="button">Back</a>
+
+   <h1>Corona Death cases Country wise</h1>
+   <div style="background-color:AntiqueWhite;">
+   <p>{{ d }}</p>
+    </div>
+
+   <h1>Corona Deaths cases for next 10 days.</h1>   
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Death Cases</th>
+      </tr>
+      <tr>
+        <td>{{ Date[0] }}</td>
+        <td>{{ death[0] }}</td>
+      </tr>
+      <tr>
+        <td>{{ Date[1] }}</td>
+        <td>{{ death[1] }}</td>
+      </tr>
+      <tr>
+        <td>{{ Date[2] }}</td>
+        <td>{{ death[2] }}</td>
+      </tr>
+      <tr>
+        <td>{{ Date[3] }}</td>
+        <td>{{ death[3] }}</td>
+      </tr>      
+      <tr>
+        <td>{{ Date[4] }}</td>
+        <td>{{ death[4] }}</td>
+      </tr>
+      <tr>
+        <td>{{ Date[5] }}</td>
+        <td>{{ death[5] }}</td>
+      </tr>      
+      <tr>
+        <td>{{ Date[6] }}</td>
+        <td>{{ death[6] }}</td>
+      </tr>
+      <tr>
+        <td>{{ Date[7] }}</td>
+        <td>{{ death[7] }}</td>
+      </tr>      
+      <tr>
+        <td>{{ Date[8] }}</td>
+        <td>{{ death[8] }}</td>
+      </tr>      
+      <tr>
+        <td>{{ Date[9] }}</td>
+        <td>{{ death[9] }}</td>
+      </tr>         
+    </table>        
+
+    <h1>Compare predict and test data for Death Cases of corona</h1>
+    <h1>
+    <img src="{{ url_for('static', filename='dea1.jpg' ) }}" alt="Compare predict and test data for death data of corona" width="800" height="500">
+    </h1>
+    <h1>Number of Death corona cases over time</h1>
+    <h1>
+    <img src="{{ url_for('static', filename='dea2.jpg' ) }}" alt="Number of corona death cases over time" width="800" height="500">
+    </h1>
+
+</form>
+</body>
+</html>
+
